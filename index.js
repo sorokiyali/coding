@@ -8,6 +8,16 @@ const formContainer = selectElementById('formContainer');
 
 displayform.addEventListener('click', showForm);
 
+forLogin.addEventListener('click',() =>{
+    forlogin.classList.add('active')
+    forRegister.classList.remove('active')
+    if(loginForm.classList.contains('toggleForm')){
+        formContainer.style.transform = 'translate(0)';
+        formContainer.style.transition = 'transform .5s';
+        registerForm.classList.add('toggleForm');
+        loginForm.classList.remove('toggleForm');
+    }
+})
 forRegister.addEventListener('click',() =>{
     forlogin.classList.remove('active')
     forRegister.classList.add('active')
@@ -18,6 +28,8 @@ forRegister.addEventListener('click',() =>{
         loginForm.classList.add('toggleForm');
     }
 })
+
+
 
 function selectElementById(e) {
     return document.getElementById(e);
