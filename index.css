@@ -23,11 +23,12 @@ img {
 nav {
     position: absolute;
     top: 30px;
-    left: 30px;
-    background: rgba(114, 109, 109, 0.7);
+    left: 25px;
+    background: rgba(185, 182, 182, 0.7);
     padding: 10px;
     display: flex;
     gap: 45rem;
+    border-radius: 5rem;
 }
 
 ul {
@@ -53,7 +54,7 @@ nav a {
     text-decoration: none;
     color: rgb(194, 243, 194);
     padding-left: 5rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-size: 4rem;
 }
 
@@ -97,6 +98,7 @@ section {
     width: 360px;
     padding: 20px;
     background-color: rgb(0 0 0 /35%);
+    border-radius: 5px;
     visibility: hidden;
     opacity: 0;
     transition: opacity .3s visibility .3s;
@@ -190,4 +192,14 @@ form {
 .formButton:hover{
    box-shadow: 3px 5px 15px rgb(194, 243, 194) ;
    transform: translatey(-5px); 
+}
+ /* @media screen and (max-with : 1000px) {
+    body {
+        font-size: 1rem;
+    }
+}  */
+
+.formButton{
+    margin-top: 3rem;
+    margin-bottom:-20rem
 }
